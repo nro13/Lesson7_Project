@@ -1,9 +1,9 @@
-*****************************************************
-Project Name:  Recipe Display Application
+************************************************************************
+Project Name:  Recipe Display Application  --  Project Quiz
 Author: 
 Date:   
 Participation Assignment (25 points)
-*****************************************************
+************************************************************************
 
 Instructions:  
 Answer the following questions for Lesson 7 Assignment
@@ -13,7 +13,10 @@ Question #1:  (5 points)
 ++++++++++++
 Why should you ensure that the script element that links to the jQuery library file comes before any other script element for a .js file that includes jQuery code?
 
-
+This is so the jQuery can load first and then once it is loaded you can use it with other files. Like for this assignment we had to call the main file first and then
+use our script.js file after because it calls upon the main file. To put it into better perspective, it is like having a kid not be able to buy something without his
+parent's money. If the kid goes in the store first without his mom then he won't be able to buy a candybar. However, if the mother comes in the store first then the kid
+will be able to use the mom's money since she was there first for him. 
 
 
 ++++++++++++
@@ -21,7 +24,8 @@ Question #2:  (5 points)
 ++++++++++++
 Why should you avoid including jQuery in a project if you don't need it?
 
-
+jQuery requires that you load one of the inital main files to call it into your project. This file takes up unnecessary space if you have no use for it.
+A browser also makes sure that jquery is loaded before anything else is initiated. This will take up unnecessary time and effort for the program or webpage to begin running.
 
 
 
@@ -31,7 +35,7 @@ Question #3:  (5 points)
 ++++++++++++
 How does every jQuery statement start?
 
-
+Every jQuery statement begins with a $ which is short for calling jQuery.
 
 
 
@@ -39,3 +43,17 @@ How does every jQuery statement start?
 Question #4: (10 points)
 ++++++++++++
 What is a Content Delivery Network (CDN)?  List and explain at least FOUR advantages in using a CDN.
+
+The Content Delivery Network is another site that is able to load the jQuery host from the internet instead of having you download it into your code yourself.
+Google and Microsoft both have their own versions of jQuery that they are able to host for you which make them both CDNs.
+
+The file is cached. - There is a good probability that someone visiting your website has been to another site that uses a CDN too and it will be preloaded in the browser when they get to your website.
+
+It's on a different domain. - Some web servers only allow for a certain number of files to download at once, if someone else is hosting jQuery for you then it can download simultaneously with your files.
+
+It has 100% availability. - Even if your server has power outages or some other problem, your browswer can get the files from so many other places.
+
+Boosts performance. - They can distribute the load and also save you and your users bandwidth.
+
+
+
